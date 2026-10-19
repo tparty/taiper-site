@@ -1,7 +1,7 @@
 name: Dependabot compatible merge
 on:
   workflow_run:
-    workflows: ["OSS policy", "Release site from owned version tag", "Site source acceptance"]
+    workflows: ["OSS policy", "Site source acceptance"]
     types: [completed]
   workflow_dispatch:
     inputs:
@@ -17,18 +17,42 @@ concurrency:
 jobs:
   merge:
     if: >-
-      vars.DEPENDABOT_AUTOMERGE_ENABLED == 'true' &&
+      vars.DEPENDABOT_AUTOMERGE_ENABLED == 'true' && github.ref == 'refs/heads/main' &&
       (github.event_name == 'workflow_dispatch' ||
-       (github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'))
+       (github.event.workflow_run.event == 'pull_request' &&
+        github.event.workflow_run.actor.id == 49699333 &&
+        github.event.workflow_run.conclusion == 'success'))
+    environment: dependency-maintenance
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     permissions:
-      contents: write
-      pull-requests: write
+      contents: read
+      pull-requests: read
       checks: read
       statuses: read
       actions: read
     steps:
-      - uses: zixcel/zixcel-repository-security/.github/actions/dependabot-merge@05bc24e1b7dc3374919a35093e53b3dc66d6ab24
+      - name: Create repository-scoped dependency App token
+        id: app-token
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
         with:
+          client-id: ${{ vars.DEPENDENCY_MERGE_CLIENT_ID }}
+          private-key: ${{ secrets.DEPENDENCY_MERGE_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ github.event.repository.name }}
+          permission-contents: write
+          permission-pull-requests: write
+          permission-checks: read
+          permission-statuses: read
+          permission-actions: read
+          skip-token-revoke: 'false'
+      - uses: zixcel/zixcel-repository-security/.github/actions/dependabot-merge@7b9ef0646183a00738d4dac14a17bc9cc32296d6
+        with:
+          authentication: github-app
+          token: ${{ steps.app-token.outputs.token }}
+          installation-id: ${{ steps.app-token.outputs.installation-id }}
+          expected-installation-id: ${{ vars.DEPENDENCY_MERGE_INSTALLATION_ID }}
+          app-slug: ${{ steps.app-token.outputs.app-slug }}
+          expected-app-slug: ${{ vars.DEPENDENCY_MERGE_APP_SLUG }}
+          required-workflows: '["OSS policy","Site source acceptance"]'
           pull-request-number: ${{ github.event.inputs.number || '' }}
