@@ -1,0 +1,100 @@
+{
+  "ja": {
+    "category": "考えるための情報整理",
+    "primary": {
+      "href": "/use-cases",
+      "title": "整理の流れを見る"
+    },
+    "secondary": {
+      "href": "/ai",
+      "title": "AI活用方針を読む"
+    },
+    "pathsTitle": "何をお探しですか？",
+    "paths": [
+      {
+        "href": "/approach/questions",
+        "title": "判断する問いを整理する",
+        "summary": "目的・制約・選択肢を明らかに"
+      },
+      {
+        "href": "/approach/evidence",
+        "title": "根拠を確かめる",
+        "summary": "事実・解釈・不確実性を分ける"
+      },
+      {
+        "href": "/ai",
+        "title": "AIとの向き合い方を知る",
+        "summary": "判断を委ねず、思考の補助に"
+      }
+    ],
+    "preview": {
+      "kind": "meaning",
+      "label": "使い方のイメージ",
+      "title": "選ぶ前に、考える材料を。",
+      "rows": [
+        {
+          "label": "問い",
+          "detail": "何を決めようとしているか"
+        },
+        {
+          "label": "根拠と代替案",
+          "detail": "出典・反証・他の選択肢"
+        },
+        {
+          "label": "人の判断",
+          "detail": "不確実性を残して選ぶ"
+        }
+      ],
+      "outcome": "AIは整理を支援。判断の主体は人。"
+    }
+  },
+  "en": {
+    "category": "Organize information for better thinking",
+    "primary": {
+      "href": "/use-cases",
+      "title": "Explore the approach"
+    },
+    "secondary": {
+      "href": "/ai",
+      "title": "Read the AI policy"
+    },
+    "pathsTitle": "What brings you here?",
+    "paths": [
+      {
+        "href": "/approach/questions",
+        "title": "Frame the question",
+        "summary": "Clarify goals, constraints and alternatives"
+      },
+      {
+        "href": "/approach/evidence",
+        "title": "Examine the evidence",
+        "summary": "Separate facts, interpretations and uncertainty"
+      },
+      {
+        "href": "/ai",
+        "title": "Work thoughtfully with AI",
+        "summary": "Use assistance without delegating judgment"
+      }
+    ],
+    "preview": {
+      "kind": "meaning",
+      "label": "Workflow illustration",
+      "title": "Understand before you choose.",
+      "rows": [
+        {
+          "label": "Question",
+          "detail": "What are we trying to decide?"
+        },
+        {
+          "label": "Evidence & alternatives",
+          "detail": "Sources, counterevidence and other options"
+        },
+        {
+          "label": "Human judgment",
+          "detail": "Decide with uncertainty made visible"
+        }
+      ],
+      "outcome": "AI assists organization. People decide."
+    }
+  }
+}
