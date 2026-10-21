@@ -8,7 +8,7 @@
       "caption": "",
       "origin": "https://taiper.org",
       "locale": "ja",
-      "accent": "#087e79",
+      "accent": "#277052",
       "navigation": [
         {
           "title": "考え方を知る",
@@ -98,7 +98,7 @@
               "text": "目的、選択肢、制約を分け、何を判断しようとしているのかを共有します。",
               "links": [
                 {
-                  "title": "詳しく読む",
+                  "title": "問いをはっきりさせる",
                   "href": "/approach/questions",
                   "icon": "/brand/icons/search.svg"
                 }
@@ -109,7 +109,7 @@
               "text": "事実と解釈を区別し、反証や不確実性も一緒に検討するための構造を考えます。",
               "links": [
                 {
-                  "title": "詳しく読む",
+                  "title": "根拠をたどる",
                   "href": "/approach/evidence",
                   "icon": "/brand/icons/flow.svg"
                 }
@@ -120,7 +120,7 @@
               "text": "AIは整理や比較を支援するもの。判断を委ねず、出典と前提を確かめる方針を示します。",
               "links": [
                 {
-                  "title": "詳しく読む",
+                  "title": "AIを、思考の補助に",
                   "href": "/approach/ai",
                   "icon": "/brand/icons/document.svg"
                 }
@@ -510,7 +510,7 @@
       "caption": "",
       "origin": "https://taiper.org",
       "locale": "en",
-      "accent": "#087e79",
+      "accent": "#277052",
       "navigation": [
         {
           "title": "Explore the approach",
