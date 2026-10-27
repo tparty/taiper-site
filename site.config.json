@@ -102,11 +102,11 @@
       },
       "privacy": {
         "label": "プライバシー",
-        "summary": "この紹介サイトに検討ケース、個人情報、顧客資料を入力する機能はありません。"
+        "summary": "お問い合わせ・情報提供には株式会社HATの共通プライバシーポリシーを適用します。"
       },
       "contact": {
         "label": "Taiperに関する連絡",
-        "summary": "公開可能な仕様への意見はGitHubのtparty/taiper-siteへお寄せください。実際の判断ケースや秘密資料は送らないでください。"
+        "summary": "お問い合わせフォームをご利用ください。返信先は任意です。秘密情報は送らないでください。"
       }
     },
     "en": {
@@ -198,11 +198,11 @@
       },
       "privacy": {
         "label": "Privacy",
-        "summary": "This presentation site provides no form for entering decision cases, personal information, or customer records."
+        "summary": "The common HAT Inc. privacy policy applies to inquiries and reports."
       },
       "contact": {
         "label": "Taiper contact",
-        "summary": "Share public specification feedback on GitHub at tparty/taiper-site. Do not submit real decision cases or confidential records."
+        "summary": "Use the contact form. Reply email is optional. Do not send confidential information."
       }
     }
   }
