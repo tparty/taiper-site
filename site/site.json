@@ -1,0 +1,105 @@
+{
+  "siteId": "taiper",
+  "origin": "https://taiper.org",
+  "defaultLocale": "ja",
+  "locales": {
+    "ja": {
+      "brand": "Taiper",
+      "caption": "",
+      "origin": "https://taiper.org",
+      "locale": "ja",
+      "accent": "#277052",
+      "navigation": [
+        {
+          "title": "考え方を知る",
+          "href": "/approach"
+        },
+        {
+          "title": "活用シーン",
+          "href": "/use-cases"
+        },
+        {
+          "title": "AI活用方針",
+          "href": "/ai"
+        },
+        {
+          "title": "ドキュメント",
+          "href": "/docs"
+        }
+      ],
+      "resources": [],
+      "icon": "/brand/icon.png",
+      "secondaryAction": {
+        "title": "AI活用方針",
+        "href": "/ai"
+      },
+      "pageOrder": [
+        "/",
+        "/approach",
+        "/approach/questions",
+        "/approach/evidence",
+        "/approach/ai",
+        "/use-cases",
+        "/ai",
+        "/tools/sem-lang",
+        "/docs/sem-lang",
+        "/docs",
+        "/docs/getting-started",
+        "/journal",
+        "/contact",
+        "/privacy",
+        "/security",
+        "/sitemap"
+      ]
+    },
+    "en": {
+      "brand": "Taiper",
+      "caption": "",
+      "origin": "https://taiper.org",
+      "locale": "en",
+      "accent": "#277052",
+      "navigation": [
+        {
+          "title": "Explore the approach",
+          "href": "/approach"
+        },
+        {
+          "title": "Use cases",
+          "href": "/use-cases"
+        },
+        {
+          "title": "AI principles",
+          "href": "/ai"
+        },
+        {
+          "title": "Docs",
+          "href": "/docs"
+        }
+      ],
+      "resources": [],
+      "icon": "/brand/icon.png",
+      "secondaryAction": {
+        "title": "AI principles",
+        "href": "/ai"
+      },
+      "pageOrder": [
+        "/",
+        "/approach",
+        "/approach/questions",
+        "/approach/evidence",
+        "/approach/ai",
+        "/use-cases",
+        "/ai",
+        "/tools/sem-lang",
+        "/docs/sem-lang",
+        "/docs",
+        "/docs/getting-started",
+        "/journal",
+        "/contact",
+        "/privacy",
+        "/security",
+        "/sitemap"
+      ]
+    }
+  }
+}
