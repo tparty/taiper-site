@@ -9,7 +9,7 @@
   "sites": [
     {
       "id": "taiper",
-      "version": "0.1.9",
+      "version": "0.1.10",
       "account": "0655772369a7b3425e3398313a36521b",
       "worker": "taiper-site",
       "domain": "taiper.org",
@@ -19,7 +19,8 @@
       "appDirectory": ".",
       "assetDirectory": ".output/public",
       "buildKind": "nuxt-generate",
-      "zone": "9d5835c39877f6b2ca5c04e423c068b4"
+      "zone": "9d5835c39877f6b2ca5c04e423c068b4",
+      "documentDirectory": "site"
     }
   ]
 }
