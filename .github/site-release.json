@@ -22,5 +22,9 @@
       "zone": "9d5835c39877f6b2ca5c04e423c068b4",
       "documentDirectory": "site"
     }
+  ],
+  "requiredChecks": [
+    "repository-policy",
+    "site-source"
   ]
 }
